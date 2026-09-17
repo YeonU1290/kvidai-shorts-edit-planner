@@ -1,0 +1,77 @@
+{
+  "env": {
+    "CLAUDE_CODE_ENABLE_TELEMETRY": "1"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(ls:*)"
+    ],
+    "deny": [
+      "Read(docs/ai-query-list/**)",
+      "Read(.google-apps-script/**)",
+      "Read(.patches/**)",
+      "Read(references_deprecated/**)",
+      "Read(**/references_deprecated/**)",
+      "Read(GEMINI.md)",
+      "Read(AGENTS.md)",
+      "Read(**/GEMINI.md)",
+      "Read(**/AGENTS.md)",
+      "Read(*.log)",
+      "Read(.env.local)",
+      "Read(.DS_Store)",
+      "Read(Thumbs.db)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "plansDirectory": ".claude/plans",
+  "model": "opusplan",
+  "project": {
+    "name": "epicmobile next-js boilerplate Repository",
+    "description": "",
+    "documentation": {
+      "main_instructions": "CLAUDE.md",
+      "readme": "README.md",
+      "core_rules": {
+        "plan_conventions": "core/plan-conventions.md",
+        "git_commit_rules": "core/git-commit-rules.md",
+        "file_path_rules": "core/file-path-rules.md",
+        "documentation_rules": "core/documentation-rules.md"
+      },
+      "contextual_rules": {
+        "qa_conventions": "contextual/qa-conventions.md"
+      }
+    }
+  },
+  "development": {
+    "type": "Documentation Repository",
+    "purpose": "Token optimization via two-tier rule structure"
+  },
+  "permissions_deprecated": {
+    "allow": [
+      "Read(references_deprecated/제품서비스매뉴얼_from-notion-export_20250714/**)"
+    ],
+    "deny": [
+      "Read(.git/**)",
+      "Read(node_modules/**)",
+      "Read(package-lock.json)",
+      "claude code 에는, .claudeignore 는 공식문서에 내용 없음. -> https://github.com/anthropics/claude-code/issues/579",
+      "// AI 도구 간, MEMORY 파일 중복 READ 방지",
+      "Read(GEMINI.md)",
+      "// 기타 불필요한 파일들",
+      "Read(*.log)"
+    ]
+  },
+  "important_notes": [
+    "Always run 'npm run build' before committing",
+    "Use i18n for all user-facing text",
+    "Payment integration: Dodopayments (see docs/payment/)",
+    "V1 and V2 video models have different parameters"
+  ],
+  "references": [
+    "https://code.claude.com/docs/ko/settings"
+  ],
+  "enabledPlugins_references": {
+    "claude-mem@thedotmack": "https://docs.claude-mem.ai/installation"
+  }
+}

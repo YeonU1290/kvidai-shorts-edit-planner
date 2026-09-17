@@ -1,0 +1,11 @@
+name: dev-standards
+version: 1.0.0
+description: APM project for dev-standards
+author: kincjf
+dependencies:
+  apm:
+  # - mattpocock/skills/skills/productivity/grill-me
+  - epicmobile18/dev-standards/.agents/skills/vision-checker
+  mcp: []
+includes: auto
+scripts: {}
