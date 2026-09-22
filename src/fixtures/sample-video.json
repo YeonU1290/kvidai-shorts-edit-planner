@@ -1,0 +1,41 @@
+{
+  "videoId": "sample-001",
+  "durationSeconds": 62,
+  "scenes": [
+    {
+      "id": "scene-1",
+      "startTime": 0,
+      "endTime": 8,
+      "transcript": "안녕하세요 오늘은 파스타 만드는 법을 알려드릴게요",
+      "visualDescription": "주방에서 카메라를 보며 인사하는 사람, 밝은 조명"
+    },
+    {
+      "id": "scene-2",
+      "startTime": 8,
+      "endTime": 22,
+      "transcript": "먼저 마늘을 얇게 썰어줍니다",
+      "visualDescription": "도마 위에서 마늘을 칼로 써는 클로즈업 장면"
+    },
+    {
+      "id": "scene-3",
+      "startTime": 22,
+      "endTime": 40,
+      "transcript": "팬에 올리브오일을 두르고 마늘을 볶아줍니다. 향이 정말 좋아요!",
+      "visualDescription": "팬에서 마늘이 지글지글 볶아지는 장면, 김이 올라옴"
+    },
+    {
+      "id": "scene-4",
+      "startTime": 40,
+      "endTime": 55,
+      "transcript": "면을 넣고 소스와 함께 비벼주면 완성입니다",
+      "visualDescription": "완성된 파스타를 접시에 담는 장면, 화려한 플레이팅"
+    },
+    {
+      "id": "scene-5",
+      "startTime": 55,
+      "endTime": 62,
+      "transcript": "정말 맛있으니 꼭 만들어보세요!",
+      "visualDescription": "완성된 요리를 맛보며 만족스러운 표정을 짓는 사람"
+    }
+  ]
+}

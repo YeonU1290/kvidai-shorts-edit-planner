@@ -4,7 +4,8 @@ import * as z from 'zod';
 export const Env = createEnv({
   server: {
     ARCJET_KEY: z.string().startsWith('ajkey_').optional(),
-    CLERK_SECRET_KEY: z.string().min(1),
+    CLERK_SECRET_KEY: z.string().min(1).optional(),
+    OPENAI_API_KEY: z.string().min(1),
     DATABASE_URL: z.string().min(1),
   },
   client: {
@@ -34,5 +35,7 @@ export const Env = createEnv({
     NEXT_PUBLIC_POSTHOG_KEY: process.env.NEXT_PUBLIC_POSTHOG_KEY,
     NEXT_PUBLIC_POSTHOG_HOST: process.env.NEXT_PUBLIC_POSTHOG_HOST,
     NODE_ENV: process.env.NODE_ENV,
+
+    OPENAI_API_KEY: process.env.OPENAI_API_KEY,
   },
 });
